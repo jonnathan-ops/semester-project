@@ -1,5 +1,4 @@
 # semester-project
-# Semester Work 2026
 
 ## Project Description
 
