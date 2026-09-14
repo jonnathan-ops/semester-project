@@ -1,40 +1,314 @@
+/* =========================
+   GENERAL STYLES
+========================= */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
-}
-
-header {
-    background-color: #1f4e79;
-    color: white;
-    text-align: center;
-    padding: 30px 20px;
-}
-
-header h1 {
-    margin: 0;
-    font-size: 36px;
-}
-
-header p {
-    font-size: 18px;
-}
-
-main {
-    width: 80%;
-    max-width: 900px;
-    margin: 30px auto;
-    background-color: white;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-}
-
-h2 {
-    color: #1f4e79;
-}
-
-p {
+    font-family: Arial, Helvetica, sans-serif;
     line-height: 1.6;
+    color: #222;
+    background-color: #f5f7fa;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+.site-header {
+    background-color: #12355b;
+    padding: 18px 0;
+}
+
+.site-header .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* =========================
+   NAVIGATION
+========================= */
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-list a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+}
+
+.nav-list a:hover {
+    background-color: #1d5d91;
+}
+
+/* Keyboard accessibility */
+.nav-list a:focus-visible,
+.button:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+    outline: 3px solid #ffcc00;
+    outline-offset: 3px;
+}
+
+/* =========================
+   HERO SECTION
+========================= */
+
+.hero {
+    background-color: #eaf3fb;
+    padding: 50px 0;
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.eyebrow {
+    font-weight: bold;
+    color: #12355b;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+h1 {
+    font-size: 2.2rem;
+    line-height: 1.2;
+    margin: 10px 0;
+}
+
+.hero-text {
+    font-size: 1.05rem;
+    margin-bottom: 25px;
+}
+
+.hero-image img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* =========================
+   BUTTON
+========================= */
+
+.button {
+    display: inline-block;
+    background-color: #12355b;
+    color: #ffffff;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #1d5d91;
+}
+
+/* =========================
+   SECTIONS
+========================= */
+
+.section {
+    padding: 55px 0;
+}
+
+.section h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 0;
+    color: #12355b;
+}
+
+.section-intro {
+    text-align: center;
+    max-width: 650px;
+    margin: 0 auto 30px;
+}
+
+/* =========================
+   SERVICES
+========================= */
+
+.services-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+.service-card {
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.service-card h3 {
+    color: #12355b;
+}
+
+.icon {
+    font-size: 2rem;
+}
+
+/* =========================
+   ABOUT
+========================= */
+
+.about {
+    background-color: #eaf3fb;
+}
+
+.about-content {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.about-box {
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+.about-box h3 {
+    color: #12355b;
+}
+
+.about-box li {
+    margin-bottom: 8px;
+}
+
+/* =========================
+   CONTACT FORM
+========================= */
+
+.contact-form {
+    max-width: 650px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 7px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #999;
+    border-radius: 5px;
+    font: inherit;
+}
+
+textarea {
+    resize: vertical;
+}
+
+input:focus,
+textarea:focus {
+    border-color: #12355b;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+.site-footer {
+    background-color: #12355b;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* =========================
+   TABLET / DESKTOP
+========================= */
+
+@media (min-width: 768px) {
+
+    .site-header .container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .hero {
+        padding: 80px 0;
+    }
+
+    .hero-content {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .hero-content > div {
+        flex: 1;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    .services-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .about-content {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .about-content > div {
+        flex: 1;
+    }
+
 }
