@@ -1,6 +1,4 @@
-/* =========================
-   GENERAL STYLES
-========================= */
+/* general styles */
 
 * {
     box-sizing: border-box;
@@ -30,9 +28,7 @@ img {
     margin: 0 auto;
 }
 
-/* =========================
-   HEADER
-========================= */
+/* header */
 
 .site-header {
     background-color: #12355b;
@@ -53,9 +49,7 @@ img {
     font-weight: bold;
 }
 
-/* =========================
-   NAVIGATION
-========================= */
+/* navigation */
 
 .nav-list {
     list-style: none;
@@ -87,9 +81,7 @@ textarea:focus-visible {
     outline-offset: 3px;
 }
 
-/* =========================
-   HERO SECTION
-========================= */
+/* hero section */
 
 .hero {
     background-color: #eaf3fb;
@@ -125,9 +117,7 @@ h1 {
     border-radius: 10px;
 }
 
-/* =========================
-   BUTTON
-========================= */
+/* button */
 
 .button {
     display: inline-block;
@@ -145,9 +135,7 @@ h1 {
     background-color: #1d5d91;
 }
 
-/* =========================
-   SECTIONS
-========================= */
+/* sections */
 
 .section {
     padding: 55px 0;
@@ -166,9 +154,7 @@ h1 {
     margin: 0 auto 30px;
 }
 
-/* =========================
-   SERVICES
-========================= */
+/* services */
 
 .services-grid {
     display: grid;
@@ -191,9 +177,7 @@ h1 {
     font-size: 2rem;
 }
 
-/* =========================
-   ABOUT
-========================= */
+/* about */
 
 .about {
     background-color: #eaf3fb;
@@ -219,9 +203,7 @@ h1 {
     margin-bottom: 8px;
 }
 
-/* =========================
-   CONTACT FORM
-========================= */
+/* contact form */
 
 .contact-form {
     max-width: 650px;
@@ -259,9 +241,7 @@ textarea:focus {
     border-color: #12355b;
 }
 
-/* =========================
-   FOOTER
-========================= */
+/* footer */
 
 .site-footer {
     background-color: #12355b;
@@ -270,9 +250,7 @@ textarea:focus {
     padding: 20px 0;
 }
 
-/* =========================
-   TABLET / DESKTOP
-========================= */
+/* tablet or desktop */
 
 @media (min-width: 768px) {
 
