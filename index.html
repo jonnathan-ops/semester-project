@@ -3,22 +3,184 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Semester Work</title>
+    <meta name="description" content="Tech Solutions - Simple technology services and solutions">
+    <title>Tech Solutions</title>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-    <header>
-        <h1>My Semester Work</h1>
-        <p>Welcome to my semester work repository.</p>
+    <!-- Header and Navigation -->
+    <header class="site-header">
+        <div class="container">
+            <a href="#" class="logo">Tech Solutions</a>
+
+            <nav aria-label="Main navigation">
+                <ul class="nav-list">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
+    <!-- Hero Section -->
     <main>
-        <h2>About This Repository</h2>
-        <p>
-            This repository contains my assignments, projects,
-            notes, and other academic work completed during the semester.
-        </p>
+        <section id="home" class="hero">
+            <div class="container hero-content">
+                <div>
+                    <p class="eyebrow">Technology made simple and easy to use by everyone </p>
+
+                    <h1>Smart Technology Solutions for Your Business</h1>
+
+                    <p class="hero-text">
+                        We provide reliable and affordable technology solutions
+                        that help businesses work smarter, faster, and more efficientlyin order
+                        to provide quality to the people.
+                    </p>
+
+                    <a href="#services" class="button">Explore Our Services</a>
+                </div>
+
+                <div class="hero-image">
+                    <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=900&q=80"
+                         alt="Computer technology equipment">
+                </div>
+            </div>
+        </section>
+
+        <!-- Services -->
+        <section id="services" class="section">
+            <div class="container">
+                <h2>Our Services</h2>
+
+                <p class="section-intro">
+                    We offer practical technology services for students,
+                    individuals, and small businesses.
+                </p>
+
+                <div class="services-grid">
+
+                    <article class="service-card">
+                        <div class="icon">💻</div>
+                        <h3>Web Development</h3>
+                        <p>
+                            We create simple, modern, and responsive websites
+                            for individuals and businesses.
+                        </p>
+                    </article>
+
+                    <article class="service-card">
+                        <div class="icon">🛠️</div>
+                        <h3>IT Support</h3>
+                        <p>
+                            We help users solve common computer, software,
+                            and technology problems.
+                        </p>
+                    </article>
+
+                    <article class="service-card">
+                        <div class="icon">🔒</div>
+                        <h3>Cybersecurity</h3>
+                        <p>
+                            We provide basic guidance to help users protect
+                            their information and digital accounts.
+                        </p>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- About -->
+        <section id="about" class="section about">
+            <div class="container about-content">
+
+                <div>
+                    <h2>About Us</h2>
+
+                    <p>
+                        Tech Solutions is a student technology project focused
+                        on providing simple and useful digital solutions.
+                    </p>
+
+                    <p>
+                        Our goal is to make technology easier to understand
+                        and accessible to individuals and small businesses.
+                    </p>
+                </div>
+
+                <div class="about-box">
+                    <h3>Why Choose Us?</h3>
+                    <ul>
+                        <li>Simple and practical solutions</li>
+                        <li>Responsive website design</li>
+                        <li>Affordable technology services</li>
+                        <li>Customer-focused approach</li>
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact" class="section">
+            <div class="container">
+                <h2>Contact Us</h2>
+
+                <p class="section-intro">
+                    Have a question or need a technology solution?
+                    Send us a message.
+                </p>
+
+                <form class="contact-form">
+
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text"
+                               id="name"
+                               name="name"
+                               placeholder="Enter your name"
+                               required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email"
+                               id="email"
+                               name="email"
+                               placeholder="Enter your email"
+                               required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message"
+                                  name="message"
+                                  rows="5"
+                                  placeholder="Write your message"
+                                  required></textarea>
+                    </div>
+
+                    <button type="submit" class="button">
+                        Send Message
+                    </button>
+
+                </form>
+            </div>
+        </section>
     </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2026 Tech Solutions.</p>
+        </div>
+    </footer>
 
 </body>
 </html>
